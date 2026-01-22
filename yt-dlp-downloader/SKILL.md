@@ -1,6 +1,6 @@
 ---
 name: yt-dlp-downloader
-description: Download videos from YouTube and 1000+ other websites using yt-dlp. Use when you need to: (1) Download videos from YouTube, Bilibili, Vimeo, or any supported site, (2) Extract audio from videos, (3) Download subtitles, (4) Download entire playlists, (5) Get video information (title, duration, description), (6) Select video quality or format, (7) Download video metadata or thumbnails
+description: "Download videos from YouTube and 1000+ other websites using yt-dlp. Use when you need to download videos, extract audio, download subtitles, download playlists, get video info, select quality, or download metadata."
 ---
 
 # yt-dlp Video Downloader
