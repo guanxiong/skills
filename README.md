@@ -17,12 +17,12 @@
 - 严格对照原文，不修改任何内容
 
 **使用示例**：
-```bash
-# 安装依赖
-pip install python-docx
+```
+帮我把这个用户协议文档转换成 H5 页面：C:\Documents\用户协议.docx
 
-# 转换 Word 文档
-python scripts/convert-docx.py /path/to/document.docx
+转换这个隐私协议：D:\Contracts\隐私政策2024版.docx
+
+把 Word 文档生成网页：C:\Agreements\服务条款.docx
 ```
 
 **生成文件命名**：
@@ -46,35 +46,24 @@ python scripts/convert-docx.py /path/to/document.docx
 - 支持 1000+ 视频网站
 
 **使用示例**：
-```python
-from scripts.download_video import download_video
+```
+下载这个视频：https://www.youtube.com/watch?v=a2sfkJeXmE0
 
-# 基础下载（自动使用 Chrome Cookie 和代理）
-result = download_video("https://youtube.com/watch?v=VIDEO_ID")
+帮我把这个 Bilibili 视频下载到 D:\Videos 目录：https://www.bilibili.com/video/BV1xx411c7mD
 
-# 下载到指定目录
-result = download_video(url, output_dir="./downloads")
+下载 YouTube 播放列表的前 5 个视频：https://www.youtube.com/playlist?list=PLxxxxxx
 
-# 下载带字幕
-result = download_video(url, write_subs=True, sub_lang="en,zh")
+获取这个视频的信息：https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
-# 仅下载音频
-result = download_video(url, format_id="bestaudio/best")
+只下载音频：https://www.youtube.com/watch?v=VIDEO_ID
+
+下载视频并下载中英文字幕：https://www.youtube.com/watch?v=VIDEO_ID
 ```
 
 **自动代理优先级**：
 1. Chrome 浏览器代理（系统设置）
 2. Clash 代理（端口 7890-7899）
 3. 手动指定代理
-
-**获取视频信息**：
-```python
-from scripts.download_video import get_video_info
-
-info = get_video_info("https://youtube.com/watch?v=VIDEO_ID")
-print(f"Title: {info['info']['title']}")
-print(f"Duration: {info['info']['duration']} seconds")
-```
 
 ---
 
