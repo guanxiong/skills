@@ -4,28 +4,34 @@
 
 ## 技能列表
 
-### 1. skills-publish
-**管理 skills 项目的发布流程，包括：检查技能变化、更新 README.md、git 提交并推送到 GitHub。当用户说：提交技能、发布更新、push skills、更新技能仓库时使用此技能。**
+### skills-publish
+**管理 skills 项目的发布流程，包括：检查技能变化、更新 README.md、git 提交并推送到 GitHub**
 
 **使用示例**：
 ```
-- - 核心功能亮点
+- 提交技能更新
+- 发布 skills 到 GitHub
+- 检查并提交技能变化
 ```
 
-### 2. word-to-h5-agreement
-**将Word格式的法律协议文档（用户协议、隐私协议、法律条款）转换为美观的响应式H5页面。仅处理用户指定的单个文件，不联想生成其他文件。当用户请求：转换指定Word文件为HTML、查看Word文档的H5效果、在浏览器中预览Word协议时使用此技能。**
+### word-to-h5-agreement
+**将 Word 格式的法律协议文档（用户协议、隐私协议、法律条款）转换为美观的响应式 H5 页面**
 
 **使用示例**：
 ```
-
+- 帮我把这个用户协议文档转换成 H5 页面：C:\Documents\用户协议.docx
+- 转换这个隐私协议：D:\Contracts\隐私政策2024版.docx
+- 法务 doc 转成 html：C:\Agreements\服务条款.docx
 ```
 
-### 3. yt-dlp-downloader
-**Download videos from YouTube and 1000+ other websites using yt-dlp. Use when you need to: (1) Download videos from YouTube, Bilibili, Vimeo, or any supported site, (2) Extract audio from videos, (3) Download subtitles, (4) Download entire playlists, (5) Get video information (title, duration, description), (6) Select video quality or format, (7) Download video metadata or thumbnails**
+### yt-dlp-downloader
+**使用 yt-dlp 从 YouTube、Bilibili、Vimeo 等 1000+ 网站下载视频**
 
 **使用示例**：
 ```
-
+- 下载这个视频：https://www.youtube.com/watch?v=a2sfkJeXmE0
+- 帮我把这个 Bilibili 视频下载到 D:\Videos 目录：https://www.bilibili.com/video/BV1xx411c7mD
+- 只下载音频：https://www.youtube.com/watch?v=VIDEO_ID
 ```
 
 ---
@@ -34,8 +40,10 @@
 
 ```
 .claude/skills/
-├── skills/                     # 各技能目录
-└── README.md                   # 本文件
+├── skills-publish/        # 技能发布工具
+├── word-to-h5-agreement/  # Word 转 H5 协议
+├── yt-dlp-downloader/     # 视频下载器
+└── README.md              # 本文件
 ```
 
 ---
@@ -52,4 +60,4 @@
 
 ---
 
-*最后更新：{datetime.now().strftime("%Y-%m-%d %H:%M:%S")}*
+*最后更新：2026-01-22 11:26:54
